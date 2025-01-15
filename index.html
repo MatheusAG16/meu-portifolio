@@ -32,7 +32,7 @@
               class="minha-foto"
             />
           </div>
-          <h1>Olá, mundo!</h1>
+          <h1><span>Olá, mundo!</span></h1>
         </div>
         <div id="parte-2">
           <p>
@@ -40,7 +40,8 @@
             Estudante em Analise e desenvolvimento de sistemas pela Uninove!
             <br /><br />
             Apaixonado por tecnologia e pronto para criar seu projeto, entre em
-            contato! <strong><a href="#contato">Contato</a></strong>
+            contato! <br /><br />
+            <strong><a href="#contato"><span>Contato</span></a></strong>
           </p>
         </div>
       </div>
@@ -108,21 +109,20 @@
       </div>
       <div id="contato" class="container">
         <h1>Por favor, entre em contato:</h1>
-        <form action="" class="form">
-          <p>
+        <form action="contato.php" class="form" method="POST">
+          <div class="form-group">
             <label for="nome">Nome: </label>
             <input type="text" name="nome" id="nome" />
-          </p>
-          <br />
-          <p>
+          </div>
+          <div class="form-group">
             <label for="email">Email: </label>
             <input type="text" name="email" id="email" />
-          </p>
-          <br />
-          <p>
+          </div>
+          <div class="form-group">
             <label for="telefone">Telefone: </label>
             <input type="number" name="telefone" id="telefone" maxlength="11" />
-          </p>
+          </div>
+          <input type="submit" value="Enviar">
         </form>
       </div>
     </main>
