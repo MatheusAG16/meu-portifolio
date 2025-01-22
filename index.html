@@ -2,41 +2,59 @@
 <html lang="pt-br">
   <head>
     <meta charset="UTF-8" />
+    <!-- Define a codificação de caracteres para a página -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Responsividade para dispositivos móveis -->
     <title>Matheus Dev</title>
+    <!-- Título da página -->
+
+    <!-- Link para o arquivo CSS -->
     <link rel="stylesheet" href="style.css" />
+
+    <!-- Pré-conexão com Google Fonts para melhorar o desempenho -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <!-- Link para fontes personalizadas -->
     <link
       href="https://fonts.googleapis.com/css2?family=Jersey+15&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap"
       rel="stylesheet"
     />
+
+    <!-- Favicon da página -->
     <link rel="shortcut icon" href="images/icon-fav.png" type="image/x-icon" />
   </head>
   <body>
+    <!-- Cabeçalho fixo com navegação -->
     <header>
       <nav>
         <ol>
+          <!-- Links de navegação para seções da página -->
           <li><a href="#sobre-mim">Home</a></li>
           <li><a href="#projetos">Projetos</a></li>
           <li><a href="#contato">Contato</a></li>
         </ol>
       </nav>
     </header>
+
     <main>
+      <!-- Seção "Sobre Mim" com contêiner -->
       <div id="sobre-mim" class="container">
         <div id="parte-1">
           <div id="div-foto">
+            <!-- Imagem de perfil -->
             <img
               src="images/foto-perfil-att.jpeg"
               alt="Uma foto minha"
               class="minha-foto"
             />
           </div>
+          <!-- Título com fundo personalizado -->
           <h1><span>Olá, mundo!</span></h1>
         </div>
         <div id="parte-2">
           <p>
+            <!-- Informações pessoais e link de contato -->
             Eu sou o <strong>Matheus!</strong><br />
             Estudante em Analise e desenvolvimento de sistemas pela Uninove!
             <br /><br />
@@ -48,6 +66,8 @@
           </p>
         </div>
       </div>
+
+      <!-- Seção de linguagens utilizadas -->
       <div class="container" id="linguagens">
         <ol>
           <li><img src="" alt="" />HTML</li>
@@ -57,9 +77,12 @@
           <li>React</li>
         </ol>
       </div>
+
+      <!-- Seção de projetos com contêiner -->
       <div class="container" id="projetos">
         <h1>Projetos</h1>
         <div id="div-projetos">
+          <!-- Projeto 1 -->
           <div class="projeto">
             <a href="https://matheusag16.github.io/Sudoku/" target="_blank">
               <img
@@ -74,6 +97,8 @@
               >
             </h2>
           </div>
+
+          <!-- Projeto 2 -->
           <div class="projeto">
             <a href="https://matheusag16.github.io/To-do-List/" target="_blank">
               <img
@@ -90,6 +115,8 @@
               >
             </h2>
           </div>
+
+          <!-- Projeto 3 -->
           <div class="projeto">
             <a
               href="https://matheusag16.github.io/Gerador-de-Senha/"
@@ -110,9 +137,12 @@
           </div>
         </div>
       </div>
+
+      <!-- Seção de contato com contêiner -->
       <div id="contato" class="container">
         <h1>Contato</h1>
         <div class="redes">
+          <!-- Links para redes sociais -->
           <a href="https://github.com/MatheusAG16" target="_blank">
             <div><img src="images/github.png" alt="" />GitHub</div>
           </a>
@@ -131,6 +161,8 @@
         </div>
       </div>
     </main>
+
+    <!-- Rodapé -->
     <footer>Matheus Dev. &copy;</footer>
   </body>
 </html>
