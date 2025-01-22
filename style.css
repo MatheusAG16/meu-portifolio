@@ -6,6 +6,7 @@
 
 html {
     scroll-behavior: smooth;
+    scroll-padding-top: 40px;
 }
 
 body {
@@ -61,7 +62,7 @@ main {
 }
 
 .container {
-    height: 100vh;
+    height: 95vh;
     width: 60vw;
     border: 1px solid black;
     border-radius: 20px;
@@ -188,10 +189,22 @@ div#contato h1 {
     padding: 20px;
 }
 
+#contato {
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 60px;
     background-color: #000;
     color: white;
     text-align: center;
     padding: 1rem;
-    margin-top: 20px;
+    margin-top: 50px;
 }
+
