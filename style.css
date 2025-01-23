@@ -3,6 +3,7 @@
     padding: 0;
     margin: 0;
     font-family: "Jersey 15", serif;
+    transition: all 0.3s ease-in-out;
 }
 
 /* Define o comportamento suave de rolagem e o espaçamento de rolagem no topo */
@@ -185,6 +186,7 @@ div#linguagens li {
     height: 80%;
     text-align: center;
     padding: 5px;
+
 }
 
 .projeto img {
