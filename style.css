@@ -251,6 +251,10 @@ div#contato h1 {
     justify-content: center;
 }
 
+.redes div:hover {
+    transform: scale(1.1);
+}
+
 /* Estilo do rodapé */
 footer {
     display: flex;
