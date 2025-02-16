@@ -18,17 +18,25 @@
       rel="stylesheet"
     />
 
+    <!--Icones personalizados do GoogleFonts-->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+
     <!-- Favicon da página -->
     <link rel="shortcut icon" href="images/icon-fav.png" type="image/x-icon" />
 
     <!--Media querrys-->
     <link rel="stylesheet" href="style.css" media="all" />
-    <link rel="stylesheet" href="mobile.css" media="(max-width: 800px)" />
+    <link rel="stylesheet" href="mobile.css" media="(max-width: 768px)" />
     <link
       rel="stylesheet"
       href="tablet.css"
-      media="(min-width: 801px) and (max-width: 1024px)"
+      media="(min-width: 769px) and (max-width: 1024px)"
     />
+
+    <script src="script.js" defer></script>
   </head>
   <body>
     <!-- Cabeçalho fixo com navegação -->
@@ -75,18 +83,67 @@
 
       <!-- Seção de linguagens utilizadas -->
       <div class="container" id="linguagens">
+        <h1>Principais linguagens</h1>
         <ol>
-          <li><img src="" alt="" />HTML</li>
-          <li>CSS 3</li>
-          <li>JavaScript</li>
-          <li>PHP</li>
-          <li>React</li>
+          <li>
+            <figure>
+              <img
+                src="images/html.png"
+                alt="Icone do HTML"
+                class="linguagens__imagens"
+              />
+              <figcaption>HTML 5</figcaption>
+            </figure>
+          </li>
+          <li>
+            <figure>
+              <img
+                src="images/css-3.png"
+                alt="Icone do CSS"
+                class="linguagens__imagens"
+              />
+              <figcaption>CSS 3</figcaption>
+            </figure>
+          </li>
+          <li>
+            <figure>
+              <img
+                src="images/java-script.png"
+                alt="Icone do JavaScript"
+                class="linguagens__imagens"
+              />
+              <figcaption>JavaScript</figcaption>
+            </figure>
+          </li>
+          <li>
+            <figure>
+              <img
+                src="images/php.png"
+                alt="Icone do PHP"
+                class="linguagens__imagens"
+              />
+              <figcaption>PHP</figcaption>
+            </figure>
+          </li>
+          <li>
+            <figure>
+              <img
+                src="images/react.png"
+                alt="Icone do React"
+                class="linguagens__imagens"
+              />
+              <figcaption>React</figcaption>
+            </figure>
+          </li>
         </ol>
       </div>
 
-      <!-- Seção de projetos com contêiner -->
+      <!-- Seção de projetos com container -->
       <div class="container" id="projetos">
         <h1>Projetos</h1>
+        <button class="projeto__btn projeto__btn--anterior">
+          <span class="material-symbols-outlined"> arrow_back_ios </span>
+        </button>
         <div id="div-projetos">
           <!-- Projeto 1 -->
           <div class="projeto">
@@ -94,11 +151,10 @@
               <img
                 src="images/sudoku-intro.jpg"
                 alt="Screenshot do site online 'Sudoku' feito por Matheus de Andrade"
-                id="img-sudoku" class="img-projeto"
+                id="img-sudoku"
+                class="img-projeto"
               />
-              <h2>
-                Sudoku Online!
-              </h2>
+              <h2>Sudoku Online!</h2>
             </a>
           </div>
 
@@ -108,14 +164,11 @@
               <img
                 src="images/to-do-list-intro.jpg"
                 alt="Screenshot do site online 'To-do-list' feito por Matheus de Andrade"
-                id="img-to-do-list" class="img-projeto"
+                id="img-to-do-list"
+                class="img-projeto"
               />
-              <h2>
-                To-do List!
-              </h2>
+              <h2>To-do List!</h2>
             </a>
-            
-            
           </div>
 
           <!-- Projeto 3 -->
@@ -126,14 +179,37 @@
             >
               <img
                 src="images/gerador-de-senha-intro.jpg"
-                alt="Imagem do site Gerador de Senha criado por Matheus de Andrade!" id="img-gerador" class="img-projeto"
+                alt="Imagem do site Gerador de Senha criado por Matheus de Andrade!"
+                id="img-gerador"
+                class="img-projeto"
               />
-              <h2>
-                Gerador de Senha!
-              </h2>
+              <h2>Gerador de Senha!</h2>
             </a>
           </div>
+
+          <div class="projeto">
+            <a
+              href="https://matheusag16.github.io/Gerador-de-Senha/"
+              target="_blank"
+            >
+              <img
+                src="images/gerador-de-senha-intro.jpg"
+                alt="Imagem do site Gerador de Senha criado por Matheus de Andrade!"
+                id="img-gerador"
+                class="img-projeto"
+              />
+              <h2>Gerador de Senha!</h2>
+            </a>
+          </div>
+          <div class="projeto">Projeto 5</div>
+          <div class="projeto">Projeto 6</div>
+          <div class="projeto">Projeto 7</div>
+          <div class="projeto">Projeto 8</div>
+          <div class="projeto">Projeto 9</div>
         </div>
+        <button class="projeto__btn projeto__btn--proximo">
+          <span class="material-symbols-outlined"> arrow_forward_ios </span>
+        </button>
       </div>
 
       <!-- Seção de contato com contêiner -->
@@ -142,18 +218,26 @@
         <div class="redes">
           <!-- Links para redes sociais -->
           <a href="https://github.com/MatheusAG16" target="_blank">
-            <div><img src="images/github.png" alt="" />GitHub</div>
+            <div>
+              <img src="images/github.png" alt="Icone do GitHub" />GitHub
+            </div>
           </a>
           <div>
             <a
               href="https://www.linkedin.com/in/matheus-germano-217070203/"
               target="_blank"
-              ><img src="images/linkedin.png" alt="" />Linkedin</a
+              ><img
+                src="images/linkedin.png"
+                alt="Icone do Linkedin"
+              />Linkedin</a
             >
           </div>
           <div>
             <a href="https://www.instagram.com/matheus_a.g" target="_blank"
-              ><img src="images/instagram.png" alt="" />Instagram</a
+              ><img
+                src="images/instagram.png"
+                alt="Icone do Instagram"
+              />Instagram</a
             >
           </div>
         </div>

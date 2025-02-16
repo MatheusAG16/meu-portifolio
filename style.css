@@ -1,269 +1,291 @@
 /* Define o estilo global para todos os elementos */
 * {
-    padding: 0;
-    margin: 0;
-    font-family: "Jersey 15", serif;
-    transition: all 0.3s ease-in-out;
+  padding: 0;
+  margin: 0;
+  font-family: "Jersey 15", serif;
+  transition: all 0.3s ease-in-out;
+  box-sizing: border-box;
 }
 
 /* Define o comportamento suave de rolagem e o espaçamento de rolagem no topo */
 html {
-    scroll-behavior: smooth;
-    scroll-padding-top: 40px;
+  scroll-behavior: smooth;
+  scroll-padding-top: 40px;
 }
 
 /* Define a cor de fundo do corpo da página */
 body {
-    background-color: #5A6D5F;
+  background-color: #5a6d5f;
 }
 
 /* Adiciona uma sombra ao texto dos títulos <h1> */
 h1 {
-    text-shadow: 1px 1px 0 #ffffffaf;
+  text-shadow: 1px 1px 0 #ffffffaf;
 }
 
 /* Define a decoração de texto e a cor dos links */
 a {
-    text-decoration: none;
-    color: rgba(255, 255, 255, 0.692);
-    transition: .1s;
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.692);
+  transition: 0.1s;
 }
 
 a:hover {
-    color: #fff;
+  color: #fff;
 }
 
 /* Define o fundo e o preenchimento dos spans dentro dos links */
 a span {
-    background-color: black;
-    padding: 1px;
+  background-color: black;
+  padding: 1px;
 }
 
 /* Estilo do cabeçalho fixo */
 header {
-    position: fixed;
-    z-index: 10;
-    background-color: black;
-    width: 100%;
-    height: 40px;
+  position: fixed;
+  z-index: 10;
+  background-color: black;
+  width: 100%;
+  height: 40px;
 }
 
 /* Estilo dos links de navegação dentro do cabeçalho */
-header nav ol li a{
-    text-decoration: none;
-    font-size: 1.5em;
-    transition: .5s;
+header nav ol li a {
+  text-decoration: none;
+  font-size: 1.5em;
+  transition: 0.5s;
 }
 
 /* Define a altura e a largura do contêiner de navegação e da lista ordenada */
-header nav, ol {
-    height: 100%;
-    width: 100%;
+header nav,
+ol {
+  height: 100%;
+  width: 100%;
 }
 
 /* Alinha os itens da lista de navegação no centro e distribui o espaço entre eles */
 header nav ol {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
 }
 
 /* Remove o estilo padrão da lista */
 header nav li {
-    list-style-type: none;
+  list-style-type: none;
 }
 
 /* Estilo da tag <main> */
 main {
-    position: relative;
-    top: 30px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
+  position: relative;
+  top: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
 }
 
 /* Estilo do contêiner principal */
 .container {
-    height: 95vh;
-    width: 60vw;
-    border: 1px solid black;
-    border-radius: 20px;
-    margin: 40px;
-    background-color: #a2aa99;
+  height: 70vh;
+  width: 60vw;
+  border: 1px solid black;
+  border-radius: 20px;
+  margin: 40px;
+  background-color: #a2aa99;
 }
 
 /* Estilo da imagem da minha foto */
 .minha-foto {
-    width: 200px;
-    margin: 30px;
-    border-radius: 50%;
-    border: 1px solid #ffffff73;
+  width: 200px;
+  margin: 30px;
+  border-radius: 50%;
+  border: 1px solid #ffffff73;
 }
 
 /* Centraliza o conteúdo da div da foto */
 #div-foto {
-    text-align: center;
+  text-align: center;
 }
 
 /* Estilo da seção "sobre mim" */
 div#sobre-mim {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
 }
 
 /* Define a largura máxima dos elementos parte 1 e parte 2 que são o "Olá, mundo e Sobre mim" */
-div#parte-1, #parte2 {
-    max-width: 100%;
+div#parte-1,
+#parte2 {
+  max-width: 100%;
 }
 
 /* Define a largura da primeira parte */
 #parte-1 {
-    width: 50%;
+  width: 50%;
 }
 
 /* Define a largura da segunda parte */
 #parte-2 {
-    width: 50%;
+  width: 50%;
 }
 
 /* Estilo dos títulos na seção "sobre mim" */
 #sobre-mim h1 {
-    text-align: center;
-    font-size: 4em;
-    width: 100%;
-    height: 100px;
+  text-align: center;
+  font-size: 4em;
+  width: 100%;
+  height: 100px;
 }
 
 /* Estilo dos parágrafos na seção "sobre mim" */
 #sobre-mim p {
-    margin: 20px;
-    text-align: justify;
-    font-size: 1.3em;
+  margin: 20px;
+  text-align: justify;
+  font-size: 1.3em;
 }
 
 /* Estilo da seção de linguagens */
 div#linguagens {
-    height: 80px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  height: 200px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.linguagens__imagens {
+  width: 40px;
 }
 
 /* Define o estilo da lista de linguagens */
 div#linguagens ol {
-    width: 70%;
-    list-style: none;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+  width: 70%;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 /* Define o estilo dos itens da lista de linguagens */
 div#linguagens li {
-    display: inline;
-    padding: 10px;
+  text-align: center;
+}
+
+#projetos {
+  overflow: hidden;
 }
 
 /* Estilo dos títulos na seção de projetos */
 #projetos h1 {
-    text-align: center;
-    font-size: 3em;
-    margin: 1em;
+  text-align: center;
+  font-size: 3em;
+  margin: 1em;
 }
 
 /* Estilo do contêiner de projetos */
 #div-projetos {
-    display: flex;
-    justify-content: space-evenly;
-    height: 80%;
+  overflow: hidden;
+  display: flex;
+  justify-content: space-evenly;
+  /* background-color: black; */
+}
+
+/*Estilo dos botões para passar os projetos*/
+.projeto__btn {
+  width: 50px;
+  border: none;
+  border-radius: 10px;
+  background-color: #5a6d5f;
+  opacity: 0;
+}
+
+.projeto__btn:hover {
+  opacity: 1;
+  cursor: pointer;
 }
 
 /* Estilo individual dos projetos */
 .projeto {
-    width: 30%;
-    height: 80%;
-    text-align: center;
-    padding: 5px;
-
-}
-
-.projeto img {
-    transition: 0.3s;
+  min-width: 33%;
+  height: auto;
+  text-align: center;
+  padding: 5px;
 }
 
 .projeto img:hover {
-    transform: scale(1.1);
-    margin-bottom: 10px;
+  transform: scale(1.1);
+  margin-bottom: 10px;
 }
 
 /* Estilo das imagens dentro dos projetos */
 .projeto img {
-    max-width: 100%;
-    width: auto;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 10%;
+  max-width: 90%;
+  max-height: auto;
+  object-fit: cover;
+  border-radius: 10%;
+  transition: 0.3s;
 }
 
 /* Estilo dos links dentro dos projetos */
 .projeto a {
-    color: rgb(66, 64, 64);
-    text-decoration: none;
+  color: rgb(66, 64, 64);
+  text-decoration: none;
 }
 
 /* Estilo das redes sociais */
 .redes {
-    display: flex;
-    justify-content: space-evenly;
+  display: flex;
+  justify-content: space-evenly;
 }
 
 /* Estilo individual dos ícones das redes sociais */
 .redes div {
-    margin: 1em;
-    width: 50px;
-    height: 50px;
+  margin: 1em;
+  width: 50px;
+  height: 50px;
 }
 
 /* Estilo das imagens dentro dos ícones das redes sociais */
 .redes div img {
-    width: 100%;
-    height: 100%;
-    background-color: white;
-    border-radius: 50%;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  border-radius: 50%;
 }
 
 /* Estilo dos títulos na seção de contato */
 div#contato h1 {
-    display: block;
-    font-size: 3em;
-    text-align: center;
-    padding: 20px;
+  display: block;
+  font-size: 3em;
+  text-align: center;
+  padding: 20px;
 }
 
 /* Estilo da seção de contato */
 #contato {
-    height: 300px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .redes div:hover {
-    transform: scale(1.1);
+  transform: scale(1.1);
 }
 
 /* Estilo do rodapé */
 footer {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 60px;
-    background-color: #000;
-    color: white;
-    text-align: center;
-    padding: 1rem;
-    margin-top: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 60px;
+  background-color: #000;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 50px;
 }
