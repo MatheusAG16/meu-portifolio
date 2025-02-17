@@ -1,50 +1,53 @@
 @charset "UTF-8";
 
 .container {
-    height: 100%;
-    width: 99%;
-    margin: 1%;
-    margin-bottom: 5%;
+  height: 100%;
+  width: 99%;
+  margin: 1%;
+  margin-bottom: 5%;
 }
 
 #sobre-mim {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-    padding-top: 20%;
-    padding-bottom: 20%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  padding-top: 20%;
+  padding-bottom: 20%;
 }
 
 #div-projetos {
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
-#parte-1, #parte-2, div#linguagens ol {
-    width: 100%;
-    flex-grow: 1;
+#parte-1,
+#parte-2,
+div#linguagens ol {
+  width: 100%;
+  flex-grow: 1;
 }
 
 .projeto {
-    width: 90%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    overflow: hidden;
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden;
 }
 
 .projeto a {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .img-projeto {
-    max-height: 300px;
+  max-height: 300px;
 }
 
 #contato {
-    flex-direction: column;
+  flex-direction: column;
 }

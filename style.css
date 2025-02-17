@@ -177,46 +177,54 @@ div#linguagens li {
 
 #projetos {
   overflow: hidden;
+  height: 80vh;
 }
 
 /* Estilo dos títulos na seção de projetos */
 #projetos h1 {
   text-align: center;
   font-size: 3em;
-  margin: 1em;
+  margin-top: 1em;
 }
 
 /* Estilo do contêiner de projetos */
 #div-projetos {
-  overflow: hidden;
   display: flex;
-  justify-content: space-evenly;
-  /* background-color: black; */
+  align-items: center;
+  height: 70%;
+  transition: transform 1.4s;
 }
 
 /*Estilo dos botões para passar os projetos*/
+.div__btn {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 25px;
+}
+
 .projeto__btn {
-  width: 50px;
+  width: 100px;
+  height: 50px;
   border: none;
   border-radius: 10px;
   background-color: #5a6d5f;
-  opacity: 0;
 }
 
 .projeto__btn:hover {
-  opacity: 1;
   cursor: pointer;
+  transform: scale(1.1);
 }
 
 /* Estilo individual dos projetos */
 .projeto {
-  min-width: 33%;
-  height: auto;
+  flex: 0 0 33.33%;
   text-align: center;
   padding: 5px;
 }
 
-.projeto img:hover {
+.projeto:hover {
   transform: scale(1.1);
   margin-bottom: 10px;
 }
@@ -224,10 +232,9 @@ div#linguagens li {
 /* Estilo das imagens dentro dos projetos */
 .projeto img {
   max-width: 90%;
-  max-height: auto;
-  object-fit: cover;
+  max-height: 250px;
+  object-fit: contain;
   border-radius: 10%;
-  transition: 0.3s;
 }
 
 /* Estilo dos links dentro dos projetos */
