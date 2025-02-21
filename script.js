@@ -6,12 +6,24 @@ const btnAnterior = document.querySelector(".projeto__btn--anterior");
 const btnProximo = document.querySelector(".projeto__btn--proximo");
 
 let currentIndex = 0;
-const projetosVisiveis = 3; // Número de projetos visíveis de cada vez
+let projetosVisiveis = 3; // Número de projetos visíveis de cada vez
+
+function telaMenor() {
+  if (window.matchMedia("(max-width: 768px)").matches) {
+    console.log("tela menor do que 768px");
+  }
+
+  return;
+}
 
 btnProximo.addEventListener("click", () => {
-  if (currentIndex < projeto.length - projetosVisiveis) {
+  if (telaMenor) {
+    projetosVisiveis = 1;
+  }
+  if (currentIndex < projeto.length / projetosVisiveis) {
     currentIndex++;
     updateProjetos();
+    console.log("telaMenor");
   }
 });
 

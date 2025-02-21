@@ -230,7 +230,7 @@ div#linguagens li {
 }
 
 /* Estilo das imagens dentro dos projetos */
-.projeto img {
+.img-project {
   max-width: 90%;
   max-height: 250px;
   object-fit: contain;

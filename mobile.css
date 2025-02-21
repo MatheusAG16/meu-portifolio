@@ -17,12 +17,6 @@
   padding-bottom: 20%;
 }
 
-#div-projetos {
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-
 #parte-1,
 #parte-2,
 div#linguagens ol {
@@ -31,20 +25,10 @@ div#linguagens ol {
 }
 
 .projeto {
-  width: 90%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  overflow: hidden;
+  flex: 0 0 100%;
 }
 
-.projeto a {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.img-projeto {
+.img-project {
   max-height: 300px;
 }
 
