@@ -6,7 +6,7 @@ const btnAnterior = document.querySelector(".projeto__btn--anterior");
 const btnProximo = document.querySelector(".projeto__btn--proximo");
 
 let currentIndex = 0;
-let projetosVisiveis = 3; // Número de projetos visíveis de cada vez
+let projetosVisiveis = 1; // Número de projetos visíveis de cada vez
 
 function telaMenor() {
   if (window.matchMedia("(max-width: 768px)").matches) {
@@ -17,9 +17,6 @@ function telaMenor() {
 }
 
 btnProximo.addEventListener("click", () => {
-  if (telaMenor) {
-    projetosVisiveis = 1;
-  }
   if (currentIndex < projeto.length / projetosVisiveis) {
     currentIndex++;
     updateProjetos();
