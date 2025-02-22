@@ -176,6 +176,12 @@ div#linguagens li {
   text-align: center;
 }
 
+div#linguagens li:hover {
+  transform: scale(1.3);
+  cursor: pointer;
+}
+
+/*Container dos projetos*/
 #projetos {
   overflow: hidden;
   height: 80vh;

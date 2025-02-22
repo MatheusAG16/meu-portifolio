@@ -8,26 +8,50 @@ const btnProximo = document.querySelector(".projeto__btn--proximo");
 let currentIndex = 0;
 let projetosVisiveis = 3; // Número de projetos visíveis de cada vez
 
-function telaMenor() {
-  if (window.matchMedia("(max-width: 768px)").matches) {
-    console.log("tela menor do que 768px");
-  }
+let larguraJanela = window.innerWidth;
 
-  return;
+function mostrarTamanho() {
+  larguraJanela = window.innerWidth;
+  console.log(larguraJanela);
+  currentIndex = 0;
+  updateProjetos();
 }
 
+window.addEventListener("resize", mostrarTamanho);
+
 btnProximo.addEventListener("click", () => {
-  if (currentIndex < projeto.length - projetosVisiveis) {
-    currentIndex++;
-    updateProjetos();
-    console.log("telaMenor");
+  if (larguraJanela <= 768) {
+    projetosVisiveis = 1;
+  } else {
+    projetosVisiveis = 3;
+  }
+
+  if (projetosVisiveis == 3) {
+    if (currentIndex < projeto.length - projeto.length / 2) {
+      currentIndex++;
+      updateProjetos();
+      console.log(`A largura da janela está em ${larguraJanela}`);
+    }
+  } else {
+    if (currentIndex < projeto.length - 1) {
+      currentIndex++;
+      updateProjetos();
+      console.log(`A largura da janela está em ${larguraJanela}`);
+    }
   }
 });
 
 btnAnterior.addEventListener("click", () => {
+  if (larguraJanela <= 768) {
+    projetosVisiveis = 1;
+  } else {
+    projetosVisiveis = 3;
+  }
+
   if (currentIndex > 0) {
     currentIndex--;
     updateProjetos();
+    console.log(`A largura da janela está em ${larguraJanela}`);
   }
 });
 
