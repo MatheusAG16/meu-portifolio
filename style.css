@@ -114,6 +114,7 @@ div#sobre-mim {
   align-items: center;
   justify-content: center;
   overflow: hidden;
+  min-height: 400px;
 }
 
 /* Define a largura máxima dos elementos parte 1 e parte 2 que são o "Olá, mundo e Sobre mim" */
@@ -178,6 +179,7 @@ div#linguagens li {
 #projetos {
   overflow: hidden;
   height: 80vh;
+  min-height: 510px;
 }
 
 /* Estilo dos títulos na seção de projetos */
